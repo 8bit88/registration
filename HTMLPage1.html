@@ -1,83 +1,56 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="uk">
 <head>
-    <link rel="StyleSheet1" href="StyleSheet1.css">
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8">
+    <title>StreamSchool</title>
+    <link rel="stylesheet" href="C:/Users/karin/OneDrive/Рабочий стол/school diary/css/style.css">
 </head>
 <body>
-    import "./StyleSheet.css";
+    <div class="element-light">
+        <div class="background">
+            <img class="element" alt="Element" src="C:/Users/karin/OneDrive/Рабочий стол/school diary/image/logo.svg">
 
-    export const ElementLight = () => {
-    return (
-    <div className="element-light">
-        <div className="background">
-            <div className="container">
-                <div className="overlap">
-                    <img className="element" alt="Element" src={x31} />
+            <p class="text-wrapper">
+                Зареєструйтесь, щоб мати доступ до всіх функцій
+            </p>
 
-                    <p className="text-wrapper">
-                        Зареєструйтесь, щоб мати доступ до всіх функцій
-                    </p>
+            <div class="container">
+                <div class="overlay-border">
+                    <h2 class="heading-sign-in">Реєстрація</h2>
+                    <p class="subtext">Введіть свої дані для входу в акаунт</p>
 
-                    <div className="overlay-border">
-                        <div className="heading-sign-in">Реєстрація</div>
-
-                        <p className="div">Введіть свої дані для входу в акаунт</p>
-
-                        <div className="form">
-                            <div className="label-email">Email</div>
-
-                            <div className="overlap-group">
-                                <div className="input">
-                                    <input className="container-2"
-                                           placeholder="you@example.com"
-                                           type="email" />
-                                </div>
-
-                                <img className="SVG" alt="Svg" src={SVG} />
-                            </div>
-
-                            <div className="label-password">Пароль</div>
-
-                            <div className="link">
-                                <div className="text-wrapper-2">Забули пароль?</div>
-                            </div>
-
-                            <div className="overlap-group-2">
-                                <img className="img" alt="Svg" src={image} />
-
-                                <div className="button">
-                                    <img className="SVG-2" alt="Svg" src={SVG2} />
-                                </div>
-                            </div>
-
-                            <div className="checkbox" />
-
-                            <div className="label-remember-me">Не виходити з системи</div>
-
-                            <button className="div-wrapper">
-                                <div className="text-wrapper-3">Вхід</div>
-                            </button>
+                    <form class="form">
+                        <label class="label" for="email">Email</label>
+                        <div class="input-wrapper">
+                            <input id="email" type="email" placeholder="you@example.com" required>
+                            <img class="icon" src="C:/Users/karin/OneDrive/Рабочий стол/school diary/image/letter.svg" alt="Email">
                         </div>
 
-                        <div className="horizontal-border">
-                            <div className="overlap-2">
-                                <div className="text-wrapper-4">Новий користувач?</div>
-
-                                <div className="link-2">
-                                    <div className="text-wrapper-5">Створіть акаунт</div>
-                                </div>
-                            </div>
+                        <label class="label" for="password">Пароль</label>
+                        <div class="input-wrapper">
+                            <input id="password" type="password" placeholder="Введіть пароль" required>
+                            <img class="icon" src="C:/Users/karin/OneDrive/Рабочий стол/school diary/image/code.svg" alt="Password">
                         </div>
+
+                        <div class="password-options">
+                            <a href="#" class="forgot-password">Забули пароль?</a>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Не виходити з системи</label>
+                        </div>
+
+                        <button type="submit" class="login-button">Вхід</button>
+                    </form>
+
+                    <div class="register-link">
+                        <span>Новий користувач?</span>
+                        <a href="#">Створіть акаунт</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    );
-    };
-
 </body>
 </html>
